@@ -1,0 +1,22 @@
+# Environment and secrets
+.env
+venv/
+litellm-env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# OS
+.DS_Store
+
+# Generated outputs
+reports/*
+!reports/.gitkeep
+
+# Local uploads (resumes may contain PII)
+uploads/*.pdf
