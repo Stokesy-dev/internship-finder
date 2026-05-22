@@ -21,3 +21,10 @@ Format:
 - Tests: `./venv/bin/python -m pytest tests/ -q` — pass
 - Commit: b7163d0
 
+## 2026-05-22 — Issue #3 — discover and shortlist CLI run profiles
+- Added `RunProfile` presets and `discover` / `shortlist` subcommands with override-friendly flags
+- Extended `AgentSettings` with `rich_reports` (shortlist on by default)
+- Documented commands in `docs/CLI.md`
+- Tests: `./venv/bin/python -m pytest tests/ -q` — 29 passed
+- Commit: 9add8b6
+

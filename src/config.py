@@ -15,6 +15,7 @@ class AgentSettings:
     min_stipend_inr: int = 20_000
     min_duration_months: int = 6
     filter_mode: FilterMode = "strict"
+    rich_reports: bool = False
     ppo_required: bool = False
     live_only: bool = False
     allow_sample_fallback: bool = False
