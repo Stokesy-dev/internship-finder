@@ -54,3 +54,15 @@ Example: strict exploration with a smaller report set:
 ```bash
 python main.py discover --resume uploads/resume.pdf --no-lenient --top-k 5
 ```
+
+## Streamlit viewer
+
+Thin UI to read the five markdown reports and trigger runs (no upload wizard or auth).
+
+```bash
+streamlit run streamlit_app.py
+```
+
+- **Reports** — reads `reports/` (configurable in the sidebar): `top_internships.md`, `skill_gap_analysis.md`, `learning_roadmaps.md`, `interview_prep.md`, `application_strategy.md`
+- **Resume** — defaults to the first `*.pdf` in `uploads/` (place your resume at `uploads/resume.pdf`)
+- **Run** — launches `discover` or `shortlist` as a subprocess; stdout and errors are shown in the app

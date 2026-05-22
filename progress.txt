@@ -40,3 +40,9 @@ Format:
 - Tests: `./venv/bin/python -m pytest tests/ -q` — 42 passed
 - Commit: 32e20c2
 
+## 2026-05-22 — Issue #6 — Thin Streamlit report viewer + re-run triggers
+- Added `streamlit_app.py` and `src/viewer.py` for report browsing and discover/shortlist subprocess runs
+- Documented in `docs/CLI.md`
+- Tests: `./venv/bin/python -m pytest tests/ -q` — pass
+- Commit: e50e554
+
