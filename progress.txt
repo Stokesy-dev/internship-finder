@@ -7,3 +7,11 @@ Format:
 - Commit: <hash or branch>
 
 ---
+
+## 2026-05-22 — Issue #1 — Lenient filters + rank penalty for unknown stipend/duration
+- Added `FilterPolicy` (strict/lenient) for stipend, duration, role, geo, and optional PPO hard filter
+- Wired policy into `InternshipScraper`, CLI `--lenient`, `AgentSettings`, and `RankingEngine`
+- Zero/unknown stipend gets rank score 0 (penalty) while lenient mode keeps listings in the funnel
+- Tests: `./venv/bin/python -m pytest tests/ -q` — pass
+- Commit: 28c4e49
+

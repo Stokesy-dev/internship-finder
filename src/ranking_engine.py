@@ -1,9 +1,13 @@
 from __future__ import annotations
 
+from .filter_policy import FilterMode
 from .models import Internship, RankedInternship
 
 
 class RankingEngine:
+    def __init__(self, filter_mode: FilterMode = "strict") -> None:
+        self.filter_mode = filter_mode
+
     def rank(self, candidates: list[RankedInternship]) -> list[RankedInternship]:
         for candidate in candidates:
             candidate.rank_score = self.score(candidate)

@@ -2,18 +2,17 @@ from __future__ import annotations
 
 import json
 import logging
-import re
 from dataclasses import asdict
 from pathlib import Path
 from typing import Iterable
 from urllib.parse import urlparse
 
 from .company_careers_scraper import CompanyCareersScraper
+from .filter_policy import FilterMode, FilterPolicy
 from .greenhouse_scraper import GreenhouseScraper
 from .lever_scraper import LeverScraper
 from .models import Internship
 from .scraper_http import ScraperHttpClient
-from .text_utils import has_role_match, is_remote_or_india
 from .wellfound_scraper import DEFAULT_SEARCH_QUERIES, WellfoundScraper
 
 LOGGER = logging.getLogger(__name__)
@@ -27,15 +26,19 @@ class InternshipScraper:
         role_query: str = "",
         ppo_required: bool = False,
         live_only: bool = False,
+        filter_mode: FilterMode = "strict",
         raw_output_path: str | Path = "data/internships.json",
         timeout_seconds: int = 15,
         retries: int = 2,
         retry_backoff_seconds: float = 1.0,
     ) -> None:
-        self.min_stipend_inr = min_stipend_inr
-        self.min_duration_months = min_duration_months
-        self.role_query = role_query
-        self.ppo_required = ppo_required
+        self.filter_policy = FilterPolicy(
+            mode=filter_mode,
+            min_stipend_inr=min_stipend_inr,
+            min_duration_months=min_duration_months,
+            role_query=role_query,
+            ppo_required=ppo_required,
+        )
         self.live_only = live_only
         self.raw_output_path = Path(raw_output_path)
         self.http = ScraperHttpClient(
@@ -95,34 +98,18 @@ class InternshipScraper:
     def filter_internships(self, internships: Iterable[Internship]) -> list[Internship]:
         filtered: list[Internship] = []
         for internship in internships:
-            accepted, reason = self._filter_decision(internship)
+            decision = self.filter_policy.evaluate(internship)
             LOGGER.info(
                 "Filter decision=%s source=%s title=%r company=%r reason=%s",
-                "accepted" if accepted else "rejected",
+                "accepted" if decision.accepted else "rejected",
                 internship.source,
                 internship.title,
                 internship.company,
-                reason,
+                decision.reason,
             )
-            if accepted:
+            if decision.accepted:
                 filtered.append(internship)
         return self._dedupe(filtered)
-
-    def _filter_decision(self, internship: Internship) -> tuple[bool, str]:
-        text = f"{internship.title} {internship.description}"
-        if internship.stipend_inr < self.min_stipend_inr:
-            return False, f"stipend {internship.stipend_inr} < {self.min_stipend_inr}"
-        if internship.duration_months < self.min_duration_months:
-            return False, f"duration {internship.duration_months} < {self.min_duration_months}"
-        if self.role_query and not _role_query_match(text, self.role_query):
-            return False, f"role does not match {self.role_query!r}"
-        if self.ppo_required and not _has_ppo_signal(text):
-            return False, "missing PPO/full-time conversion signal"
-        if not has_role_match(text):
-            return False, "missing target AI/DS/SWE/backend role keyword"
-        if not is_remote_or_india(internship.location, internship.description):
-            return False, "not remote or India"
-        return True, "passes all filters"
 
     def _discover_manual_urls(self, urls: list[str], limit: int) -> list[Internship]:
         internships: list[Internship] = []
@@ -156,12 +143,13 @@ class InternshipScraper:
             return []
 
     def _search_queries(self) -> list[str]:
-        if not self.role_query:
+        policy = self.filter_policy
+        if not policy.role_query:
             return DEFAULT_SEARCH_QUERIES
-        query = f"{self.role_query} india {self.min_duration_months} months"
-        if self.ppo_required:
+        query = f"{policy.role_query} india {policy.min_duration_months} months"
+        if policy.ppo_required:
             query += " ppo"
-        query += f" stipend {self.min_stipend_inr}"
+        query += f" stipend {policy.min_stipend_inr}"
         return [query, *DEFAULT_SEARCH_QUERIES]
 
     def _save_raw(self, internships: list[Internship]) -> None:
@@ -235,30 +223,3 @@ class InternshipScraper:
                 remote=False,
             ),
         ]
-
-
-def _role_query_match(text: str, role_query: str) -> bool:
-    text_tokens = set(re.findall(r"[a-z0-9+#.]+", text.lower()))
-    query_tokens = [
-        token
-        for token in re.findall(r"[a-z0-9+#.]+", role_query.lower())
-        if token not in {"role", "job", "position"}
-    ]
-    return all(token in text_tokens for token in query_tokens)
-
-
-def _has_ppo_signal(text: str) -> bool:
-    lowered = text.lower()
-    return any(
-        signal in lowered
-        for signal in [
-            "ppo",
-            "pre-placement",
-            "pre placement",
-            "full-time conversion",
-            "full time conversion",
-            "conversion track",
-            "considered for full-time",
-            "considered for full time",
-        ]
-    )

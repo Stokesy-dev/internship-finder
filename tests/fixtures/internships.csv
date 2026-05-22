@@ -1,0 +1,4 @@
+title,company,location,description,stipend_inr,duration_months,apply_url,source
+Machine Learning Intern,Fixture Labs,Remote India,"6 month machine learning internship. Python TensorFlow scikit-learn. Remote India. PPO possible.",0,0,https://example.com/ml,csv
+Data Science Intern,Fixture Labs,Bengaluru India,"Data science intern for 6 months. Python Pandas SQL. India remote.",25000,6,https://example.com/ds,csv
+Backend Engineering Intern,Fixture Labs,Hyderabad India,"Backend engineering intern. Python FastAPI PostgreSQL Docker. 6 months.",35000,6,https://example.com/be,csv

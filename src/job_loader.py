@@ -4,6 +4,7 @@ from pathlib import Path
 
 import pandas as pd
 
+from .filter_policy import FilterMode
 from .internship_scraper import InternshipScraper
 from .models import Internship
 from .text_utils import clean_text, parse_duration_months, parse_money_inr
@@ -16,6 +17,7 @@ class InternshipRepository:
         min_stipend_inr: int = 20_000,
         min_duration_months: int = 6,
         role_query: str = "",
+        filter_mode: FilterMode = "strict",
         ppo_required: bool = False,
         live_only: bool = False,
     ) -> None:
@@ -23,6 +25,7 @@ class InternshipRepository:
             min_stipend_inr=min_stipend_inr,
             min_duration_months=min_duration_months,
             role_query=role_query,
+            filter_mode=filter_mode,
             ppo_required=ppo_required,
             live_only=live_only,
         )

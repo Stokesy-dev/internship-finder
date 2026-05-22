@@ -1,0 +1,5 @@
+Soham Warad
+Skills: Python, FastAPI, PostgreSQL, Docker, TensorFlow, scikit-learn, Pandas, SQL, AWS
+Experience: Built ML APIs and backend services for internship projects.
+Projects: Resume matcher prototype using Python and embeddings.
+Education: B.Tech Computer Science

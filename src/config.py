@@ -3,6 +3,8 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 
+from .filter_policy import FilterMode
+
 
 @dataclass(frozen=True, slots=True)
 class AgentSettings:
@@ -12,6 +14,7 @@ class AgentSettings:
     role_query: str = ""
     min_stipend_inr: int = 20_000
     min_duration_months: int = 6
+    filter_mode: FilterMode = "strict"
     ppo_required: bool = False
     live_only: bool = False
     reports_dir: Path = Path("reports")

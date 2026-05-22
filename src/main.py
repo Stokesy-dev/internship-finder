@@ -34,6 +34,11 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--min-stipend", type=int, default=20_000, help="Minimum monthly stipend in INR.")
     parser.add_argument("--min-duration", type=int, default=6, help="Minimum internship duration in months.")
     parser.add_argument("--ppo-required", action="store_true", help="Require PPO or full-time conversion signal.")
+    parser.add_argument(
+        "--lenient",
+        action="store_true",
+        help="Lenient filters: allow unknown stipend/duration (rank penalty applied).",
+    )
     parser.add_argument("--live", action="store_true", help="Enforce live discovery only; disables sample fallback.")
     parser.add_argument("--model", default="llama3.1:8b", help="Ollama model name.")
     parser.add_argument("--ollama-url", default="http://localhost:11434", help="Ollama base URL.")
@@ -53,6 +58,7 @@ def settings_from_args(args: argparse.Namespace) -> AgentSettings:
         role_query=args.role,
         min_stipend_inr=args.min_stipend,
         min_duration_months=args.min_duration,
+        filter_mode="lenient" if args.lenient else "strict",
         ppo_required=args.ppo_required,
         live_only=args.live,
         reports_dir=Path(args.reports_dir),

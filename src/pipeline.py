@@ -50,6 +50,7 @@ class InternshipIntelligenceAgent:
             min_stipend_inr=settings.min_stipend_inr,
             min_duration_months=settings.min_duration_months,
             role_query=settings.role_query,
+            filter_mode=settings.filter_mode,
             ppo_required=settings.ppo_required,
             live_only=settings.live_only,
         )
@@ -60,7 +61,7 @@ class InternshipIntelligenceAgent:
             use_sentence_transformers=settings.use_embeddings,
         )
         self.ppo_predictor = PPOPredictor()
-        self.ranking_engine = RankingEngine()
+        self.ranking_engine = RankingEngine(filter_mode=settings.filter_mode)
         self.gap_analyzer = SkillGapAnalyzer()
         self.roadmap_generator = LearningRoadmapGenerator()
         self.prep_generator = InterviewPrepGenerator()
