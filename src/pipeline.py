@@ -3,13 +3,11 @@ from __future__ import annotations
 from dataclasses import dataclass
 from pathlib import Path
 
-from .application_strategy import ApplicationStrategyGenerator
+from .coaching_generator import CoachingGenerator
 from .company_research import CompanyResearcher
 from .config import AgentSettings
-from .interview_prep import InterviewPrepGenerator
 from .jd_parser import JDParser
 from .job_loader import InternshipRepository
-from .learning_roadmap import LearningRoadmapGenerator
 from .models import (
     ApplicationStrategy,
     Internship,
@@ -66,9 +64,11 @@ class InternshipIntelligenceAgent:
         self.ppo_predictor = PPOPredictor()
         self.ranking_engine = RankingEngine(filter_mode=settings.filter_mode)
         self.gap_analyzer = SkillGapAnalyzer()
-        self.roadmap_generator = LearningRoadmapGenerator()
-        self.prep_generator = InterviewPrepGenerator()
-        self.strategy_generator = ApplicationStrategyGenerator()
+        self.coaching = CoachingGenerator(
+            llm=self.ollama.large,
+            use_llm=settings.use_llm,
+            rich_reports=settings.rich_reports,
+        )
         self.report_generator = ReportGenerator(settings.reports_dir)
 
     def run(self) -> AgentResult:
@@ -83,9 +83,12 @@ class InternshipIntelligenceAgent:
         )[: self.settings.top_k]
 
         skill_gaps = [self.gap_analyzer.analyze(candidate) for candidate in ranked]
-        roadmaps = [self.roadmap_generator.generate(gap) for gap in skill_gaps]
-        prep = [self.prep_generator.generate(candidate) for candidate in ranked]
-        strategies = [self.strategy_generator.generate(candidate) for candidate in ranked]
+        roadmaps = [
+            self.coaching.generate_roadmap(gap, candidate)
+            for gap, candidate in zip(skill_gaps, ranked, strict=True)
+        ]
+        prep = [self.coaching.generate_prep(candidate) for candidate in ranked]
+        strategies = [self.coaching.generate_strategy(candidate) for candidate in ranked]
         report_paths = self.report_generator.write_all(
             ranked=ranked,
             skill_gaps=skill_gaps,

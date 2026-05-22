@@ -34,3 +34,9 @@ Format:
 - Tests: `./venv/bin/python -m pytest tests/ -q` — pass
 - Commit: c60a905
 
+## 2026-05-22 — Issue #5 — Rich LLM coaching reports
+- Added `CoachingGenerator` facade: templates by default, large-model coaching when `rich_reports`
+- Wired into pipeline; skill gaps remain rule-based; graceful LLM fallback
+- Tests: `./venv/bin/python -m pytest tests/ -q` — 42 passed
+- Commit: 32e20c2
+

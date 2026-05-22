@@ -27,7 +27,7 @@ Use when you want the broadest set of listings (e.g. after cache replay or `--jo
 | Setting | Value |
 |---------|--------|
 | Filter | strict (known stipend/duration required) |
-| Rich reports | on (LLM coaching path; see issue #005) |
+| Rich reports | on (large Ollama model for roadmaps, prep, strategy) |
 | limit / top_k | 30 / 5 |
 
 ```bash
@@ -41,7 +41,7 @@ Use when you want fewer, higher-confidence matches.
 Profile defaults are starting points. Explicit flags win:
 
 - `--lenient` / `--no-lenient` — filter mode
-- `--rich-reports` / `--no-rich-reports` — coaching depth
+- `--rich-reports` / `--no-rich-reports` — template vs LLM-rich coaching (roadmaps, interview prep, application strategy). Skill gaps are always rule-based.
 - `--limit`, `--top-k`, `--min-stipend`, `--min-duration`, `--role`
 - `--jobs-csv`, `--internship-url`, `--live`, `--allow-sample-fallback`
 - `--no-llm`, `--no-embeddings`
