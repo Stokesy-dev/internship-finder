@@ -1,0 +1,9 @@
+# Ralph progress log (append only — do not edit past entries)
+
+Format:
+## YYYY-MM-DD — Issue #N — Title
+- What was implemented
+- Tests run
+- Commit: <hash or branch>
+
+---
