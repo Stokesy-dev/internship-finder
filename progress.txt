@@ -28,3 +28,9 @@ Format:
 - Tests: `./venv/bin/python -m pytest tests/ -q` — 29 passed
 - Commit: 9add8b6
 
+## 2026-05-22 — Issue #4 — Dual Ollama model routing (fast vs large)
+- Added `OllamaRouter` with fast (`qwen2.5:3b`) and large (`qwen2.5:7b`) clients
+- `JDParser` → fast; `CompanyResearcher` → large; CLI `--ollama-fast-model` / `--ollama-large-model`
+- Tests: `./venv/bin/python -m pytest tests/ -q` — pass
+- Commit: c60a905
+

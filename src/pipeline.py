@@ -19,7 +19,7 @@ from .models import (
     ResumeProfile,
     SkillGapPlan,
 )
-from .ollama_client import OllamaClient
+from .ollama_router import OllamaRouter
 from .ppo_predictor import PPOPredictor
 from .ranking_engine import RankingEngine
 from .report_generator import ReportGenerator
@@ -41,8 +41,9 @@ class AgentResult:
 class InternshipIntelligenceAgent:
     def __init__(self, settings: AgentSettings) -> None:
         self.settings = settings
-        self.llm = OllamaClient(
-            model=settings.ollama_model,
+        self.ollama = OllamaRouter.from_settings(
+            fast_model=settings.ollama_fast_model,
+            large_model=settings.ollama_large_model,
             base_url=settings.ollama_url,
         )
         self.resume_parser = ResumeParser()
@@ -56,8 +57,8 @@ class InternshipIntelligenceAgent:
             allow_sample_fallback=settings.allow_sample_fallback,
             raw_output_path=settings.raw_cache_path,
         )
-        self.jd_parser = JDParser(llm=self.llm, use_llm=settings.use_llm)
-        self.company_researcher = CompanyResearcher(llm=self.llm, use_llm=settings.use_llm)
+        self.jd_parser = JDParser(llm=self.ollama.fast, use_llm=settings.use_llm)
+        self.company_researcher = CompanyResearcher(llm=self.ollama.large, use_llm=settings.use_llm)
         self.matcher = ResumeMatcher(
             model_name=settings.embedding_model,
             use_sentence_transformers=settings.use_embeddings,

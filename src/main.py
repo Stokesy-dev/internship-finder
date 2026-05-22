@@ -117,7 +117,16 @@ def _add_run_arguments(parser: argparse.ArgumentParser) -> None:
         action="store_true",
         help="Dev only: use fabricated sample internships when live discovery and cache replay fail.",
     )
-    parser.add_argument("--model", default="llama3.1:8b", help="Ollama model name.")
+    parser.add_argument(
+        "--ollama-fast-model",
+        default="qwen2.5:3b",
+        help="Ollama model for JD parsing (fast).",
+    )
+    parser.add_argument(
+        "--ollama-large-model",
+        default="qwen2.5:7b",
+        help="Ollama model for company research (large).",
+    )
     parser.add_argument("--ollama-url", default="http://localhost:11434", help="Ollama base URL.")
     parser.add_argument("--no-llm", action="store_true", help="Disable Ollama extraction and use heuristics only.")
     parser.add_argument(
@@ -150,7 +159,8 @@ def settings_from_args(args: argparse.Namespace) -> AgentSettings:
         reports_dir=Path(args.reports_dir),
         limit=args.limit if args.limit is not None else profile.limit,
         top_k=args.top_k if args.top_k is not None else profile.top_k,
-        ollama_model=args.model,
+        ollama_fast_model=args.ollama_fast_model,
+        ollama_large_model=args.ollama_large_model,
         ollama_url=args.ollama_url,
         use_llm=not args.no_llm,
         use_embeddings=not args.no_embeddings,

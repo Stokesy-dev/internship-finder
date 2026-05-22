@@ -23,7 +23,8 @@ class AgentSettings:
     reports_dir: Path = Path("reports")
     limit: int = 30
     top_k: int = 10
-    ollama_model: str = "llama3.1:8b"
+    ollama_fast_model: str = "qwen2.5:3b"
+    ollama_large_model: str = "qwen2.5:7b"
     ollama_url: str = "http://localhost:11434"
     use_llm: bool = True
     use_embeddings: bool = True

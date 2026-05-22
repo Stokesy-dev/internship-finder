@@ -45,6 +45,9 @@ Profile defaults are starting points. Explicit flags win:
 - `--limit`, `--top-k`, `--min-stipend`, `--min-duration`, `--role`
 - `--jobs-csv`, `--internship-url`, `--live`, `--allow-sample-fallback`
 - `--no-llm`, `--no-embeddings`
+- `--ollama-fast-model` (default `qwen2.5:3b`) — JD parsing
+- `--ollama-large-model` (default `qwen2.5:7b`) — company research
+- `--ollama-url` — Ollama base URL
 
 Example: strict exploration with a smaller report set:
 
