@@ -77,6 +77,7 @@ class InternshipIntelligenceAgent:
             limit=self.settings.limit,
             jobs_csv=self.settings.jobs_csv,
             internship_urls=self.settings.internship_urls,
+            seed_file=self.settings.seed_file,
         )
         ranked = self.ranking_engine.rank(
             [self._score_internship(internship, resume) for internship in internships]

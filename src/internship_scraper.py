@@ -55,16 +55,26 @@ class InternshipScraper:
         self.wellfound = WellfoundScraper(self.http)
         self.company_careers = CompanyCareersScraper(self.http)
 
-    def discover(self, limit: int = 50, manual_urls: list[str] | None = None) -> list[Internship]:
+    def discover(
+        self, limit: int = 50, manual_urls: list[str] | None = None, seed_file: Path | None = None
+    ) -> list[Internship]:
         successful_requests_before = self.http.successful_requests
         discovered: list[Internship] = []
-        manual = self._discover_manual_urls(manual_urls or [], limit)
+        
+        greenhouse_seeds, lever_seeds, manual_seeds = self._parse_seed_file(seed_file)
+        all_manual_urls = (manual_urls or []) + manual_seeds
+        
+        manual = self._discover_manual_urls(all_manual_urls, limit)
         discovered.extend(manual)
-        discovered.extend(self._discover_source("greenhouse", lambda: self.greenhouse.discover(limit=limit)))
+        discovered.extend(
+            self._discover_source("greenhouse", lambda: self.greenhouse.discover(boards=greenhouse_seeds or None, limit=limit))
+        )
         discovered.extend(
             self._discover_source("internshala", lambda: self.internshala.discover(limit=limit))
         )
-        discovered.extend(self._discover_source("lever", lambda: self.lever.discover(limit=limit)))
+        discovered.extend(
+            self._discover_source("lever", lambda: self.lever.discover(companies=lever_seeds or None, limit=limit))
+        )
         search_queries = self._search_queries()
         discovered.extend(
             self._discover_source(
@@ -166,6 +176,28 @@ class InternshipScraper:
         except Exception as exc:
             LOGGER.warning("Source=%s failed gracefully: %s", source, exc)
             return []
+
+    def _parse_seed_file(self, seed_file: Path | None) -> tuple[list[str], list[str], list[str]]:
+        if not seed_file or not seed_file.exists():
+            return [], [], []
+        
+        greenhouse_seeds: list[str] = []
+        lever_seeds: list[str] = []
+        manual_seeds: list[str] = []
+        
+        lines = seed_file.read_text(encoding="utf-8").splitlines()
+        for line in lines:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+            if line.startswith("greenhouse:"):
+                greenhouse_seeds.append(line.split(":", 1)[1].strip())
+            elif line.startswith("lever:"):
+                lever_seeds.append(line.split(":", 1)[1].strip())
+            else:
+                manual_seeds.append(line)
+                
+        return greenhouse_seeds, lever_seeds, manual_seeds
 
     def _search_queries(self) -> list[str]:
         policy = self.filter_policy

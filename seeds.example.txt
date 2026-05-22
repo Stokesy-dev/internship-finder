@@ -1,0 +1,21 @@
+# Example seed configuration for Internship Intelligence Agent
+#
+# Provide one entry per line. Blank lines and lines starting with # are ignored.
+#
+# Formats supported:
+# 1. Greenhouse board slug:
+# greenhouse:razorpay
+#
+# 2. Lever board slug:
+# lever:postman
+#
+# 3. Manual URL (job posting or company careers page):
+# https://example.com/careers
+# https://boards.greenhouse.io/meesho
+#
+# Note: Full URLs to greenhouse.io or lever.co boards are automatically
+# detected as manual URLs but processed natively by their scrapers.
+
+greenhouse:atlan
+lever:groww
+https://careers.google.com/jobs/results/?q=intern

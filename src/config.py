@@ -10,6 +10,7 @@ from .filter_policy import FilterMode
 class AgentSettings:
     resume_path: Path
     jobs_csv: Path | None = None
+    seed_file: Path | None = None
     internship_urls: tuple[str, ...] = ()
     role_query: str = ""
     min_stipend_inr: int = 20_000

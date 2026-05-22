@@ -39,10 +39,15 @@ class InternshipRepository:
         limit: int,
         jobs_csv: Path | None = None,
         internship_urls: list[str] | tuple[str, ...] | None = None,
+        seed_file: Path | None = None,
     ) -> list[Internship]:
         if jobs_csv:
             return self._load_csv(jobs_csv, limit)
-        return self.scraper.discover(limit, manual_urls=list(internship_urls or []))
+        return self.scraper.discover(
+            limit,
+            manual_urls=list(internship_urls or []),
+            seed_file=seed_file,
+        )
 
     def _load_csv(self, csv_path: Path, limit: int) -> list[Internship]:
         frame = pd.read_csv(csv_path).head(limit)

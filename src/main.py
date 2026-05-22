@@ -66,6 +66,11 @@ def _add_run_arguments(parser: argparse.ArgumentParser) -> None:
         help="Optional text file with one internship or careers URL per line.",
     )
     parser.add_argument(
+        "--seed-file",
+        default="seeds.txt",
+        help="Path to seed config file for boards and manual URLs (default: seeds.txt).",
+    )
+    parser.add_argument(
         "--limit",
         type=int,
         default=None,
@@ -146,6 +151,7 @@ def settings_from_args(args: argparse.Namespace) -> AgentSettings:
     return AgentSettings(
         resume_path=Path(args.resume),
         jobs_csv=Path(args.jobs_csv) if args.jobs_csv else None,
+        seed_file=Path(args.seed_file) if args.seed_file else None,
         internship_urls=tuple(internship_urls),
         role_query=args.role,
         min_stipend_inr=args.min_stipend if args.min_stipend is not None else 20_000,
