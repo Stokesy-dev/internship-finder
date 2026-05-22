@@ -52,3 +52,10 @@ Format:
 - Tests: `./venv/bin/python -m pytest tests/ -q` — pass
 - Commit: 8d7aa25
 
+
+## 2026-05-23 — Issue #8 — Expand Greenhouse/Lever board seed list
+- Added `--seed-file` argument (default: seeds.txt) for board slugs and manual URLs
+- Updated `InternshipScraper` to parse `greenhouse:`, `lever:`, and manual URLs
+- Provided `seeds.example.txt` as format documentation
+- Tests: `./venv/bin/python -m pytest tests/ -q` — pass
+- Commit: b4b0e6f

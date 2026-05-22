@@ -240,6 +240,516 @@
     }
   },
   {
+    "title": "Full Stack Development",
+    "company": "Freelance Trainings",
+    "location": "Ahmedabad (Hybrid)",
+    "description": "Full Stack Development internship at Freelance Trainings in Ahmedabad (Hybrid). 1.Backend Development: Build and maintain scalable APIs using Django and DRF. 2 Database Management: Design and optimize database schemas in PostgreSQL. 3 Frontend Integration: Work on the frontend to ensure a seamless user experience for trainers and clients. 4 Optimization: Implement the service layer pattern to keep business logic clean and maintainable. 5 Deployment: Assist in managing application deployment on a VPS using Gunicorn and Nginx. What You Will Learn 1) Professional software architecture (Service Layer & Schema patterns). 2) End-to-end deployment workflows on live production servers. 3) How to handle bulk data modifications and production database management. 4) Building AI-driven orchestration layers (for future project phases). Skills: Stipend: \u20b9 2,000 - 2,100 /month. Duration: 4 Months.",
+    "stipend_inr": 2100,
+    "duration_months": 4,
+    "apply_url": "https://internshala.com/internship/detail/full-stack-development-internship-in-ahmedabad-at-freelance-trainings1778834541",
+    "source": "internshala",
+    "remote": false,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 2,000 - 2,100 /month",
+      "duration_text": "4 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Embedded Systems",
+    "company": "VIZON",
+    "location": "Work from home",
+    "description": "Embedded Systems internship at VIZON in Work from home. The selected intern would work on brainstorming, prototyping & programming Microcontrollers & Microprocessors for consumer electronic products. You can visit our website https://vizon.tech Skills: Stipend: \u20b9 14,000 - 22,000 /month. Duration: 4 Months.",
+    "stipend_inr": 22000,
+    "duration_months": 4,
+    "apply_url": "https://internshala.com/internship/detail/work-from-home-embedded-systems-internship-at-vizon1775608275",
+    "source": "internshala",
+    "remote": true,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 14,000 - 22,000 /month",
+      "duration_text": "4 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Software Development",
+    "company": "VIZON",
+    "location": "Work from home",
+    "description": "Software Development internship at VIZON in Work from home. As a Software Development Intern at VIZON, you will have the opportunity to immerse yourself in the dynamic world of technology and contribute to cutting-edge projects. With your expertise in C++ Programming, Java, Python, and JavaScript, you will play a vital role in shaping VIZON's innovative software solutions. 1. Collaborate with the development team to design and implement software applications, ensuring they meet quality standards. 2. Participate in code reviews, providing valuable insights and suggestions to enhance the overall performance and maintainability of our software. 3. Assist in the documentation and testing of new features, ensuring they align with the project requirements and deliver exceptional user experiences. 4. Work closely with senior developers to troubleshoot and debug issues, contributing to a seamless and reliable software environment. 5. Stay up-to-date with the latest industry trends and emerging technologies, bringing fresh ideas and innovative solutions to the table. 6. Participate in team meetings and brainstorming sessions, fostering a collaborative and inclusive work culture. 7. Continuously learn and improve your technical skills, leveraging our supportive environment to enhance your overall professional growth. If you're eager to immerse yourself in a fast-paced and innovative environment, and ready to make a positive impact through your software development skills, then we can't wait to welcome you to our team at VIZON! You can visit our website https://vizon.tech to learn more. If you want to explore open-source projects, then check the club section of the website. Skills: Stipend: \u20b9 11,000 - 17,000 /month. Duration: 3 Months.",
+    "stipend_inr": 17000,
+    "duration_months": 3,
+    "apply_url": "https://internshala.com/internship/detail/work-from-home-software-development-internship-at-vizon1775608161",
+    "source": "internshala",
+    "remote": true,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 11,000 - 17,000 /month",
+      "duration_text": "3 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Artificial Intelligence (AI)",
+    "company": "VIZON",
+    "location": "Work from home",
+    "description": "Artificial Intelligence (AI) internship at VIZON in Work from home. Selected intern's day-to-day responsibilities include utilizing Python & C++ with multiple Libraries to build AI algorithms, computer vision detection programs, and machine learning models. Skills: Stipend: \u20b9 13,000 - 21,000 /month. Duration: 3 Months.",
+    "stipend_inr": 21000,
+    "duration_months": 3,
+    "apply_url": "https://internshala.com/internship/detail/work-from-home-artificial-intelligence-ai-internship-at-vizon1775607953",
+    "source": "internshala",
+    "remote": true,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 13,000 - 21,000 /month",
+      "duration_text": "3 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "AI & Drone Instructor | Teaching + AI Projects",
+    "company": "PracVerse Private Limited",
+    "location": "Ahmedabad",
+    "description": "AI & Drone Instructor | Teaching + AI Projects internship at PracVerse Private Limited in Ahmedabad. 1. Deliver hands-on sessions on drones, coding, and STEM concepts in partner schools as per scheduled plans. 2. Teach and engage students through interactive and practical learning experiences. 3. Execute structured curriculum plans and classroom session activities effectively. 4. Demonstrate real-world applications of drone technology and emerging tech concepts. 5. Collaborate with founding and operations teams on AI and drone-related initiatives. 6. Contribute to pilot programs, technology execution activities, and operational projects. 7. Support classroom coordination and technology-based learning implementation. 8. Participate in organizational initiatives beyond scheduled teaching sessions. Skills: Stipend: \u20b9 15,000 /month. Duration: 6 Months.",
+    "stipend_inr": 15000,
+    "duration_months": 6,
+    "apply_url": "https://internshala.com/internship/detail/part-time-ai-drone-instructor--teaching-ai-projects-internship-in-ahmedabad-at-pracverse-private-limited1778654750",
+    "source": "internshala",
+    "remote": false,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 15,000 /month",
+      "duration_text": "6 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "IT Trainer",
+    "company": "TalentHome Solutions",
+    "location": "Mumbai",
+    "description": "IT Trainer internship at TalentHome Solutions in Mumbai. Key responsibilities: 1. Provide training in various computer languages 2. Coordinate with parents 3. Prepare notes for students. Skills: Stipend: \u20b9 7,000 /month. Duration: 6 Months.",
+    "stipend_inr": 7000,
+    "duration_months": 6,
+    "apply_url": "https://internshala.com/internship/detail/it-trainer-internship-in-mumbai-at-talenthome-solutions1779456457",
+    "source": "internshala",
+    "remote": false,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 7,000 /month",
+      "duration_text": "6 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Founders Office",
+    "company": "EduRankAI",
+    "location": "Work from home",
+    "description": "Founders Office internship at EduRankAI in Work from home. 1. Take complete ownership of an assigned product from concept to launch 2. Define the product roadmap, scope, and success metrics independently 3. Design, build, or coordinate the technical development of the product 4. Own go-to-market: positioning, outreach, and user acquisition 5. Drive the product to generate its first revenue 6. Report weekly to the Founder's Office with progress, blockers, and metrics 7. Iterate rapidly based on user feedback and performance data Skills: Stipend: \u20b9 1,000 - 5,000 /month. Duration: 6 Months.",
+    "stipend_inr": 5000,
+    "duration_months": 6,
+    "apply_url": "https://internshala.com/internship/detail/work-from-home-founders-office-internship-at-edurankai1779364195",
+    "source": "internshala",
+    "remote": true,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 1,000 - 5,000 /month",
+      "duration_text": "6 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Artificial Intelligence (AI)",
+    "company": "SCARLET SPLENDOUR DESIGNS PVT LTD",
+    "location": "Kolkata",
+    "description": "Artificial Intelligence (AI) internship at SCARLET SPLENDOUR DESIGNS PVT LTD in Kolkata. 1. Identify manual, repetitive, or broken processes and automate them 2. Build internal tools, dashboards, scripts, and AI systems that solve real problems 3. Work with databases, APIs, and backend systems 4. Propose and delete useless processes - we value subtraction as much as addition 5. Collaborate directly with operations, manufacturing, and management teams Skills: Stipend: \u20b9 10,000 - 12,000 /month. Duration: 6 Months.",
+    "stipend_inr": 12000,
+    "duration_months": 6,
+    "apply_url": "https://internshala.com/internship/detail/artificial-intelligence-ai-internship-in-kolkata-at-scarlet-splendour-designs-pvt-ltd1779266823",
+    "source": "internshala",
+    "remote": false,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 10,000 - 12,000 /month",
+      "duration_text": "6 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Engineering & Operations",
+    "company": "TNAP Platforms Pvt Ltd",
+    "location": "Bangalore (Hybrid)",
+    "description": "Engineering & Operations internship at TNAP Platforms Pvt Ltd in Bangalore (Hybrid). 1. Develop and ship product features across mobile and web platforms using TypeScript, React, Next.js, and native technologies. 2. Debug, profile, and optimize launch-critical workflows and application performance. 3. Build internal tools and AI-assisted developer workflows using platforms such as Claude Code and Cursor. 4. Manage pipelines, evaluations, and infrastructure to improve team productivity and operational efficiency. 5. Execute end-to-end launch operations including launch playbooks, partner coordination, and founding-user pipelines. 6. Support on-ground operational activities and launch execution in Bangalore. 7. Create founder-focused communication content, narrative strategies, and content sequencing plans. 8. Contribute to early-stage community-building initiatives around theName.app and its product vision. Skills: Stipend: \u20b9 10,000 - 15,000 /month. Duration: 6 Months.",
+    "stipend_inr": 15000,
+    "duration_months": 6,
+    "apply_url": "https://internshala.com/internship/detail/engineering-operations-internship-in-bangalore-at-tnap-platforms-pvt-ltd1779168523",
+    "source": "internshala",
+    "remote": false,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 10,000 - 15,000 /month",
+      "duration_text": "6 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Mobile App Development",
+    "company": "Linevolt Innovations India Private Limited",
+    "location": "Kolkata (Hybrid)",
+    "description": "Mobile App Development internship at Linevolt Innovations India Private Limited in Kolkata (Hybrid). 1. Assisting in the development and management of mobile applications for Electric Ji and other technology products under Linevolt Innovations India Pvt. Ltd. 2. Working on app features, UI improvements, bug fixing, and performance optimization 3. Developing and maintaining Android/iOS applications using Flutter, React Native, or related technologies 4. Integrating APIs, Firebase, databases, authentication systems, and notification services 5. Collaborating with the product and operations team to convert real business workflows into app systems 6. Assisting in creating admin panels, dashboards, rider systems, vendor systems, and customer-facing applications 7. Testing applications regularly to identify and resolve technical issues 8. Supporting deployment, app publishing, and app maintenance activities 9. Working on AI-assisted automation systems and operational workflow integrations 10. Managing and documenting app modules, system flows, and feature updates 11. Researching and implementing new technologies to improve app scalability and user experience 12. Coordinating with designers, developers, and management teams for smooth project execution 13. Helping in building future applications and internal software systems for the expanding Electric Ji ecosystem 14. Monitoring app performance, user feedback, and operational improvements for continuous optimization 15. Maintaining organized workflows while handling multiple app-related projects simultaneously Skills: Stipend: \u20b9 10,000 - 20,000 /month. Duration: 3 Months.",
+    "stipend_inr": 20000,
+    "duration_months": 3,
+    "apply_url": "https://internshala.com/internship/detail/mobile-app-development-internship-in-kolkata-at-linevolt-innovations-india-private-limited1779166244",
+    "source": "internshala",
+    "remote": false,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 10,000 - 20,000 /month",
+      "duration_text": "3 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Backend Development",
+    "company": "EmpowerU (Promorph Solutions Private Limited)",
+    "location": "Bokaro Steel City, Dhanbad, Jamshedpur, Ranchi, Jharkhand, Ramgarh",
+    "description": "Backend Development internship at EmpowerU (Promorph Solutions Private Limited) in Bokaro Steel City, Dhanbad, Jamshedpur, Ranchi, Jharkhand, Ramgarh. 1. Developing applications using Node.js and integrating AI/Machine learning algorithms. 2. Understand project requirements, user interface designs, and user experience goals. 3. Integrate with RESTful APIs, Firebase for backend web services, third-party libraries, and ad services to fetch and display data within the app. Skills: Stipend: \u20b9 3,000 - 5,000 /month. Duration: 3 Months.",
+    "stipend_inr": 5000,
+    "duration_months": 3,
+    "apply_url": "https://internshala.com/internship/detail/backend-development-internship-in-multiple-locations-at-empoweru-promorph-solutions-private-limited1778665403",
+    "source": "internshala",
+    "remote": false,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 3,000 - 5,000 /month",
+      "duration_text": "3 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Data Science",
+    "company": "Placemein HR Solutions",
+    "location": "Work from home",
+    "description": "Data Science internship at Placemein HR Solutions in Work from home. Responsibilities Collect, clean, and analyze data from multiple sources. Build predictive models and machine learning solutions. Identify trends, patterns, and business opportunities. Create reports and dashboards to communicate insights. Work with cross-functional teams to solve business problems. Skills: Stipend: \u20b9 12,000 - 22,000 /month. Duration: 6 Months.",
+    "stipend_inr": 22000,
+    "duration_months": 6,
+    "apply_url": "https://internshala.com/internship/detail/work-from-home-data-science-internship-at-placemein-hr-solutions1779467659",
+    "source": "internshala",
+    "remote": true,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 12,000 - 22,000 /month",
+      "duration_text": "6 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Full Stack Development",
+    "company": "Login2Xplore",
+    "location": "Work from home",
+    "description": "Full Stack Development internship at Login2Xplore in Work from home. Selected intern's day-to-day responsibilities may include: 1. Working on the full stack development of software/modules, coding, and exploring new technologies. 2. Creating technical design documents and manuals. 3. Working on software installation, execution, testing automation, and providing training & support. 4. Working on R&D on various upcoming technologies, including AI/ML/Big Data, etc. Note: Longer duration and part-time internships are also available in the similar profile. Skills: Stipend: \u20b9 7,500 - 9,000 lump sum. Duration: 3 Months.",
+    "stipend_inr": 9000,
+    "duration_months": 3,
+    "apply_url": "https://internshala.com/internship/detail/work-from-home-full-stack-development-internship-at-login2xplore1779466997",
+    "source": "internshala",
+    "remote": true,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 7,500 - 9,000 lump sum",
+      "duration_text": "3 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Full Stack Development + AI Integration",
+    "company": "Sacesta Technologies",
+    "location": "Ahmedabad",
+    "description": "Full Stack Development + AI Integration internship at Sacesta Technologies in Ahmedabad. We are looking for motivated 3rd-year or final-year BTech students who want to work on real AI + full stack projects instead of just theoretical learning. 1. Work on CRUD APIs using JavaScript (Node.js) and Python 2. Build and integrate AI Agents & AI automations 3. Work with ElevenLabs, Retell AI, prompt engineering, GoHighLevel, ERPNext 4. Perform API integrations and third-party service connections 5. Learn and work on databases (MongoDB/PostgreSQL) 6. Contribute to live client projects You will get hands-on mentorship from our core team and work on production-level applications. Skills: Stipend: \u20b9 5,000 - 7,000 /month. Duration: 6 Months.",
+    "stipend_inr": 7000,
+    "duration_months": 6,
+    "apply_url": "https://internshala.com/internship/detail/full-stack-development-ai-integration-internship-in-ahmedabad-at-sacesta-technologies1779448708",
+    "source": "internshala",
+    "remote": false,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 5,000 - 7,000 /month",
+      "duration_text": "6 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Application Support",
+    "company": "Shivtel Communication Private Limited (Fonada)",
+    "location": "Noida",
+    "description": "Application Support internship at Shivtel Communication Private Limited (Fonada) in Noida. 1. Provide L1 application and technical support 2. Troubleshoot application-related issues and coordinate with internal teams for resolution 3. Monitor dashboards, logs, and application performance 4. Manage and track support tickets 5. Assist in deployment, testing, and issue validation 6. Ensure timely response and resolution for customer concerns 7. Document issues and maintain support processes Note: Perks: 1. Real-world exposure to enterprise applications and client environments 2. Opportunity to work with AI-powered and cloud communication solutions 3. Hands-on learning with technical and support teams 4. Mentorship from industry professionals 5. Full-time employment opportunity based on performance Skills: Stipend: \u20b9 15,000 - 20,000 /month. Duration: 6 Months.",
+    "stipend_inr": 20000,
+    "duration_months": 6,
+    "apply_url": "https://internshala.com/internship/detail/application-support-internship-in-noida-at-shivtel-communication-private-limited-fonada1779447865",
+    "source": "internshala",
+    "remote": false,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 15,000 - 20,000 /month",
+      "duration_text": "6 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Data Science",
+    "company": "Maxgen Technologies Private Limited",
+    "location": "Ahmedabad",
+    "description": "Data Science internship at Maxgen Technologies Private Limited in Ahmedabad. We are looking for a dynamic data science intern to join our team at Maxgen Technologies Private Limited. If you have a strong background in Python, machine learning, data science, artificial intelligence, and deep learning, then we want to hear from you! As an intern, you will have the opportunity to work on cutting-edge projects and gain hands-on experience in the field of data science. 1. Collaborating with our team of data scientists to develop and implement machine learning models. 2. Analyzing and interpreting complex data sets to uncover valuable insights. 3. Assisting in the design and implementation of data-driven solutions for our clients. 4. Conducting research to stay up-to-date on the latest trends in data science and artificial intelligence. 5. Participating in brainstorming sessions to generate innovative ideas for new projects. 6. Communicating findings and recommendations to stakeholders in a clear and concise manner. 7. Contributing to the overall success of our data science team through your passion and dedication to the field. If you are a motivated and ambitious individual with a passion for data science, then we encourage you to apply for this exciting internship opportunity. Join us at Maxgen Technologies and take the first step towards a rewarding career in data science! Skills: Stipend: \u20b9 5,000 - 12,000 /month. Duration: 3 Months.",
+    "stipend_inr": 12000,
+    "duration_months": 3,
+    "apply_url": "https://internshala.com/internship/detail/part-time-data-science-internship-in-ahmedabad-at-maxgen-technologies-private-limited1779437433",
+    "source": "internshala",
+    "remote": false,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 5,000 - 12,000 /month",
+      "duration_text": "3 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Python Development",
+    "company": "Maxgen Technologies Private Limited",
+    "location": "Ahmedabad",
+    "description": "Python Development internship at Maxgen Technologies Private Limited in Ahmedabad. As a Python Development intern at Maxgen Technologies Private Limited, you will have the opportunity to work on cutting-edge projects in the fields of Machine Learning, Django, and REST API development. Your role will involve utilizing your expertise in CSS, Python, and other relevant technologies to contribute to the development of innovative solutions for our clients. Key Responsibilities: 1. Collaborate with the development team to design and implement software solutions using Python and Django. 2. Develop and maintain REST API services to support web applications. 3. Utilize your knowledge of Machine Learning algorithms to enhance the functionality of our projects. 4. Participate in code reviews and provide constructive feedback to improve code quality. 5. Troubleshoot and debug issues to ensure the smooth operation of applications. 6. Stay up-to-date with the latest technologies and trends in the industry to contribute fresh ideas to the team. 7. Assist in the documentation of code and processes to ensure knowledge transfer within the team. If you are passionate about coding, eager to learn, and ready to take on new challenges, this internship is the perfect opportunity for you to gain hands-on experience in the field of Python development at Maxgen Technologies Private Limited. Skills: Stipend: \u20b9 5,000 - 12,000 /month. Duration: 3 Months.",
+    "stipend_inr": 12000,
+    "duration_months": 3,
+    "apply_url": "https://internshala.com/internship/detail/python-development-internship-in-ahmedabad-at-maxgen-technologies-private-limited1779434932",
+    "source": "internshala",
+    "remote": false,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 5,000 - 12,000 /month",
+      "duration_text": "3 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Python AI",
+    "company": "Codebuddy Private Limited",
+    "location": "Kolkata",
+    "description": "Python AI internship at Codebuddy Private Limited in Kolkata. Dear future AI engineer- We\u2019re Codebuddy, and we believe the future of development belongs to engineers who know how to build with AI, not without it. At Codebuddy, we follow an AI-first engineering culture where developers use AI tools daily to: build faster, automate smarter, solve problems efficiently, and create production-ready applications with modern workflows. We\u2019re looking for a Python AI intern who understands that modern Python development is no longer only about writing code manually- it\u2019s about knowing how to leverage AI to engineer better systems, APIs, automations, and intelligent workflows. If you\u2019re excited about Python, AI-assisted development, automation, backend systems, prompt engineering, and building things rapidly with AI, you\u2019ll fit right in here. 1. Build backend applications and APIs using Python with AI-assisted workflows 2. Use AI tools like ChatGPT, Cursor, Claude, GitHub Copilot, Windsurf, Bolt, etc. for coding and optimization 3. Work on automation systems, APIs, and AI-driven backend solutions 4. Generate, refactor, debug, and optimize code using AI 5. Learn modern AI-powered engineering workflows and rapid prototyping 6. Collaborate with developers and teams using AI-enhanced development practices 7. Use prompt engineering for problem-solving, debugging, and development acceleration At Codebuddy, AI is deeply integrated into our development process. We expect interns to actively use AI for coding, debugging, automation, documentation, testing, optimization, research, and productivity enhancement. We don\u2019t believe AI replaces developers. We believe developers using AI will replace developers who don\u2019t. And yes, sometimes debugging becomes easier after asking AI, 'why is this broken?' Ready to build the future? If you\u2019re passionate about Python, AI-powered development, automation, and modern engineering workflows- we\u2019d love to meet you. Apply now and let\u2019s build smarter with AI at Codebuddy. Skills: Stipend: \u20b9 23,000 - 30,000 /month. Duration: 4 Months.",
+    "stipend_inr": 30000,
+    "duration_months": 4,
+    "apply_url": "https://internshala.com/internship/detail/python-ai-internship-in-kolkata-at-codebuddy-private-limited1779434574",
+    "source": "internshala",
+    "remote": false,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 23,000 - 30,000 /month",
+      "duration_text": "4 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Software Development",
+    "company": "ALTERBASICS TECHNOLOGIES PRIVATE LIMITED",
+    "location": "Pune (Hybrid)",
+    "description": "Software Development internship at ALTERBASICS TECHNOLOGIES PRIVATE LIMITED in Pune (Hybrid). 1. Work on Generative AI development tasks, including building, testing, and improving AI-powered features using Python and modern Generative AI tools. 2. Experiment with LLMs, prompts, agents, RAG pipelines, embeddings, vector databases, and APIs to support Colrows\u2019 product development. 3. Write clean Python code, integrate AI models/tools with backend systems, debug issues, evaluate outputs, and document experiments, workflows, and improvements. Skills: Stipend: \u20b9 20,000 /month. Duration: 6 Months.",
+    "stipend_inr": 20000,
+    "duration_months": 6,
+    "apply_url": "https://internshala.com/internship/detail/software-development-internship-in-pune-at-alterbasics-technologies-private-limited1779433561",
+    "source": "internshala",
+    "remote": false,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 20,000 /month",
+      "duration_text": "6 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Data Analytics",
+    "company": "TwiLearn EduTech Private Limited",
+    "location": "Work from home",
+    "description": "Data Analytics internship at TwiLearn EduTech Private Limited in Work from home. We are looking for a dynamic Data Analytics intern to join TwiLearn EduTech Private Limited! If you are passionate about using Python, SQL, Data Analytics, MS-Excel, Data Science, Power BI, and Tableau to drive insights and make data-driven decisions, then this is the perfect opportunity for you. Key responsibilities: 1. Utilize Python and SQL to manipulate and analyze large datasets 2. Create interactive dashboards and reports using Tableau and Power BI 3. Conduct statistical analysis to identify trends and patterns in data 4. Collaborate with cross-functional teams to gather requirements and deliver data-driven solutions 5. Assist in developing predictive models and machine learning algorithms 6. Perform data cleaning and transformation to ensure data accuracy and consistency 7. Present findings and recommendations to stakeholders in a clear and concise manner If you are a proactive and analytical individual looking to gain hands-on experience in the field of Data Analytics, apply now and be part of our innovative team at TwiLearn EduTech! Skills: Stipend: \u20b9 10,000 - 20,000 /month. Duration: 3 Months.",
+    "stipend_inr": 20000,
+    "duration_months": 3,
+    "apply_url": "https://internshala.com/internship/detail/work-from-home-data-analytics-internship-at-twilearn-edutech-private-limited1779427172",
+    "source": "internshala",
+    "remote": true,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 10,000 - 20,000 /month",
+      "duration_text": "3 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Machine Learning",
+    "company": "TwiLearn EduTech Private Limited",
+    "location": "Work from home",
+    "description": "Machine Learning internship at TwiLearn EduTech Private Limited in Work from home. We are looking for a talented Machine Learning intern to join our team at TwiLearn EduTech Private Limited! If you have a strong background in Python, Data Analytics, Machine Learning, Data Science, Natural Language Processing (NLP), Deep Learning, and Artificial intelligence, we want to hear from you. Key Responsibilities: 1. Assist in developing and implementing machine learning models for educational purposes. 2. Analyze and interpret complex data sets to extract valuable insights. 3. Collaborate with the team to optimize machine learning algorithms. 4. Conduct research to stay up-to-date on the latest trends in AI and ML. 5. Support the deployment and testing of machine learning models. 6. Assist in troubleshooting and resolving technical issues related to ML projects. 7. Participate in team meetings and contribute ideas for project improvement. If you are passionate about leveraging cutting-edge technology to revolutionize education, apply now to be a part of our dynamic team! Skills: Stipend: \u20b9 10,000 - 22,000 /month. Duration: 3 Months.",
+    "stipend_inr": 22000,
+    "duration_months": 3,
+    "apply_url": "https://internshala.com/internship/detail/work-from-home-machine-learning-internship-at-twilearn-edutech-private-limited1779427135",
+    "source": "internshala",
+    "remote": true,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 10,000 - 22,000 /month",
+      "duration_text": "3 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Python Development",
+    "company": "TwiLearn EduTech Private Limited",
+    "location": "Work from home",
+    "description": "Python Development internship at TwiLearn EduTech Private Limited in Work from home. As a Python Development intern at TwiLearn EduTech Private Limited, you will have the opportunity to work on cutting-edge projects in the field of education technology. Your knowledge in HTML, CSS, Python, Django, Machine Learning, and REST API will be put to the test as you collaborate with our team of experienced developers. This internship will provide you with hands-on experience and valuable skills that will enhance your career in the tech industry. Key Responsibilities: 1. Assist in the development and maintenance of web applications using Python, Django, HTML, and CSS. 2. Implement machine learning algorithms to improve the functionality of our education platforms. 3. Collaborate with team members to design and develop REST APIs for seamless integration of various systems. 4. Troubleshoot and debug issues in existing codebase to ensure smooth functioning of our applications. 5. Research and stay updated on the latest trends and technologies in the field of software development. 6. Participate in code reviews and provide constructive feedback to improve code quality. 7. Contribute innovative ideas to enhance the user experience and overall performance of our products. Skills: Stipend: \u20b9 10,000 - 20,000 /month. Duration: 3 Months.",
+    "stipend_inr": 20000,
+    "duration_months": 3,
+    "apply_url": "https://internshala.com/internship/detail/work-from-home-python-development-internship-at-twilearn-edutech-private-limited1779426851",
+    "source": "internshala",
+    "remote": true,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 10,000 - 20,000 /month",
+      "duration_text": "3 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Cyber Security",
+    "company": "TwiLearn EduTech Private Limited",
+    "location": "Work from home",
+    "description": "Cyber Security internship at TwiLearn EduTech Private Limited in Work from home. As a Cyber Security intern at TwiLearn EduTech Private Limited, you will have the opportunity to enhance your skills in Python, Computer Networking, Linux, Ethical Hacking, VAPT, and Web Application Security. Join our dynamic team and gain hands-on experience in protecting our digital assets and ensuring a secure online environment for our users. Your key responsibilities will include: 1. Conducting security assessments and penetration testing to identify vulnerabilities within our systems. 2. Implementing security measures to protect against cyber threats and attacks. 3. Collaborating with the development team to integrate security best practices into our applications. 4. Monitoring network traffic and analyzing security logs to detect and respond to potential security incidents. 5. Assisting in the development and implementation of security policies and procedures. 6. Participating in security training and workshops to stay current with the latest industry trends and technologies. 7. Contributing to the overall improvement of our cybersecurity posture through research and innovation. If you are passionate about cybersecurity and eager to learn and grow in a fast-paced environment, apply now and take the first step towards a rewarding career in the field of digital security with TwiLearn EduTech Private Limited. Skills: Stipend: \u20b9 8,000 - 16,000 /month. Duration: 3 Months.",
+    "stipend_inr": 16000,
+    "duration_months": 3,
+    "apply_url": "https://internshala.com/internship/detail/work-from-home-cyber-security-internship-at-twilearn-edutech-private-limited1779426734",
+    "source": "internshala",
+    "remote": true,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 8,000 - 16,000 /month",
+      "duration_text": "3 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Software Development Engineering (Web)",
+    "company": "ProGlobal Software Private Limited",
+    "location": "Bangalore",
+    "description": "Software Development Engineering (Web) internship at ProGlobal Software Private Limited in Bangalore. 1. Understanding mobile/web application or app design requirements 2. Creating and implementing mobile/web application development 3. Implementing knowledge of web design, graphic design, HTML5/CSS3, or any other front-end frameworks like Flutter, AngularJS, ReactJS, etc. 4. Working with PHP and MySQL/Microsoft .Net and SQL Server/Java technologies to design, develop and debug web applications 5. Integrating backend services with .Net, PHP frameworks like CodeIgniter, Laravel, CakePHP, etc., or JavaScript frameworks like NodeJS, ReactJs, etc., or any other technology-based backend needs 6. Working on websites designed on WordPress 7. Working with the team to manage, optimize and customize multiple web applications 8. Creating and maintaining technical documentation Skills: Stipend: \u20b9 3,000 - 4,000 /month. Duration: 6 Months.",
+    "stipend_inr": 4000,
+    "duration_months": 6,
+    "apply_url": "https://internshala.com/internship/detail/software-development-engineering-web-internship-in-bangalore-at-proglobal-software-private-limited1779390209",
+    "source": "internshala",
+    "remote": false,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 3,000 - 4,000 /month",
+      "duration_text": "6 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Cyber Security Mentor",
+    "company": "DevTown",
+    "location": "Work from home",
+    "description": "Cyber Security Mentor internship at DevTown in Work from home. Are you a tech-savvy individual with a passion for cyber security and ethical hacking? DevTown is seeking a talented cybersecurity intern to join our dynamic team. If you know Linux, web application security, Python, computer networking, and VAPT, this internship opportunity is perfect for you. As a cybersecurity intern at DevTown, you will have the opportunity to work on exciting projects, gain hands-on experience, and enhance your skills in a fast-paced environment. 1. Conduct vulnerability assessments and penetration testing to identify security weaknesses. 2. Analyze and respond to security incidents, including malware analysis and forensics. 3. Implement security measures to protect systems and data from cyber threats. 4. Assist in developing and implementing security policies and procedures. 5. Monitor network traffic for potential security breaches and intrusions. 6. Collaborate with cross-functional teams to address security issues and implement solutions. 7. Stay up-to-date on the latest cybersecurity trends and technologies to enhance the company's security posture. 8. Take sessions for students and prepare workbook assignments for students and study materials. Join us at DevTown and take your cybersecurity career to the next level! Apply now! Skills: Stipend: \u20b9 8,000 /month. Duration: 3 Months.",
+    "stipend_inr": 8000,
+    "duration_months": 3,
+    "apply_url": "https://internshala.com/internship/detail/work-from-home-cyber-security-mentor-internship-at-devtown1779393754",
+    "source": "internshala",
+    "remote": true,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 8,000 /month",
+      "duration_text": "3 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Data Science Mentor",
+    "company": "DevTown",
+    "location": "Work from home",
+    "description": "Data Science Mentor internship at DevTown in Work from home. As a data science mentor intern at DevTown, you will have the opportunity to work with a team of experienced professionals in a dynamic and collaborative environment. Your role will involve providing guidance and support to junior data scientists, helping them develop their skills and enhance their understanding of data science concepts and techniques. 1. Conducting mentoring sessions for learners to guide projects and challenges 2. Developing curriculums and workshops to enhance the learning experience for students 3. Providing feedback and constructive criticism to help students improve their data science skills 4. Collaborating with the team to create a supportive and inclusive learning environment 5. Keeping up-to-date with the latest trends and developments in data science to provide relevant and up-to-date guidance 6. Participating in team meetings and brainstorming sessions to contribute new ideas and strategies for improving the mentoring program Skills: Stipend: \u20b9 10,000 /month. Duration: 3 Months.",
+    "stipend_inr": 10000,
+    "duration_months": 3,
+    "apply_url": "https://internshala.com/internship/detail/work-from-home-data-science-mentor-internship-at-devtown1779393727",
+    "source": "internshala",
+    "remote": true,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 10,000 /month",
+      "duration_text": "3 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "AI Research & Innovation Lead",
+    "company": "Namaah Pvt Ltd",
+    "location": "Work from home",
+    "description": "AI Research & Innovation Lead internship at Namaah Pvt Ltd in Work from home. 1. Research and evaluate emerging AI technologies, APIs, frameworks, and tools 2. Experiment with LLMs, AI agents, multimodal workflows, and automation systems 3. Contribute toward AI-native product and workflow innovation 4. Build and optimize prompt systems and AI interaction workflows 5. Collaborate closely with engineering, production, and product teams 6. Assist in building scalable AI-assisted production and automation systems 7. Analyze workflow performance, consistency, reliability, and optimization opportunities 8. Document research findings, testing results, and implementation recommendations Skills: Stipend: \u20b9 6,000 - 10,000 /month. Duration: 6 Months.",
+    "stipend_inr": 10000,
+    "duration_months": 6,
+    "apply_url": "https://internshala.com/internship/detail/work-from-home-ai-research-innovation-lead-internship-at-namaah-pvt-ltd1779364945",
+    "source": "internshala",
+    "remote": true,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 6,000 - 10,000 /month",
+      "duration_text": "6 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Quality Assurance",
+    "company": "Leegality (Grey Swift Private Limited)",
+    "location": "Work from home",
+    "description": "Quality Assurance internship at Leegality (Grey Swift Private Limited) in Work from home. 1. Test REST APIs using tools like Postman or similar platforms 2. Report bugs and track issues with the development team 3. Assist in regression and functional testing 4. Maintain testing documentation and reports Skills: Stipend: \u20b9 10,000 - 15,000 /month. Duration: 6 Months.",
+    "stipend_inr": 15000,
+    "duration_months": 6,
+    "apply_url": "https://internshala.com/internship/detail/work-from-home-quality-assurance-internship-at-leegality-grey-swift-private-limited1779356453",
+    "source": "internshala",
+    "remote": true,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 10,000 - 15,000 /month",
+      "duration_text": "6 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Embedded Firmware",
+    "company": "Euphotic Labs Private Limited",
+    "location": "Bangalore",
+    "description": "Embedded Firmware internship at Euphotic Labs Private Limited in Bangalore. 1. Assist in developing and scaling embedded firmware for connected devices 2. Support the firmware team in building reliable systems for large-scale device deployments 3. Work with the R&D team on firmware architecture for microcontrollers 4. Develop and test firmware for interrupt-driven embedded systems interacting with Android apps and cloud platforms 5. Help implement safety, protection, and security features in embedded systems 6. Assist in creating automated test setups for manufacturing and validation 7. Support continuous integration workflows to automate builds and testing 8. Contribute to low-power optimization and performance improvements 9. Participate in debugging, testing, and code reviews with senior engineers 10. Work closely with hardware, manufacturing, and software teams during product development 11. Assist in lab testing, assembly, and prototype validation activities 12. Learn and contribute in a fast-paced robotics and IoT product environment Skills: Stipend: \u20b9 15,000 - 20,000 /month. Duration: 6 Months.",
+    "stipend_inr": 20000,
+    "duration_months": 6,
+    "apply_url": "https://internshala.com/internship/detail/embedded-firmware-internship-in-bangalore-at-euphotic-labs-private-limited1779354739",
+    "source": "internshala",
+    "remote": false,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 15,000 - 20,000 /month",
+      "duration_text": "6 Months",
+      "skills": []
+    }
+  },
+  {
+    "title": "Full Stack Development",
+    "company": "Euphotic Labs Private Limited",
+    "location": "Bangalore",
+    "description": "Full Stack Development internship at Euphotic Labs Private Limited in Bangalore. 1. Develop on server-side cloud software using a serverless approach (AWS). 2. Work hands-on on bringing to life IoT and Edge architectures and applications 3. Work with teams on delivering key features and performance targets. Skills: Stipend: \u20b9 20,000 - 25,000 /month. Duration: 5 Months.",
+    "stipend_inr": 25000,
+    "duration_months": 5,
+    "apply_url": "https://internshala.com/internship/detail/full-stack-development-internship-in-bangalore-at-euphotic-labs-private-limited1779353246",
+    "source": "internshala",
+    "remote": false,
+    "posted_at": "",
+    "metadata": {
+      "stipend_text": "\u20b9 20,000 - 25,000 /month",
+      "duration_text": "5 Months",
+      "skills": []
+    }
+  },
+  {
     "title": "Infosec GRC Associate II",
     "company": "zeta",
     "location": "Bangalore",
