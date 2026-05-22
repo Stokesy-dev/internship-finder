@@ -39,7 +39,16 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Lenient filters: allow unknown stipend/duration (rank penalty applied).",
     )
-    parser.add_argument("--live", action="store_true", help="Enforce live discovery only; disables sample fallback.")
+    parser.add_argument(
+        "--live",
+        action="store_true",
+        help="Live discovery only; disables cache replay and sample fallback.",
+    )
+    parser.add_argument(
+        "--allow-sample-fallback",
+        action="store_true",
+        help="Dev only: use fabricated sample internships when live discovery and cache replay fail.",
+    )
     parser.add_argument("--model", default="llama3.1:8b", help="Ollama model name.")
     parser.add_argument("--ollama-url", default="http://localhost:11434", help="Ollama base URL.")
     parser.add_argument("--no-llm", action="store_true", help="Disable Ollama extraction and use heuristics only.")
@@ -61,6 +70,8 @@ def settings_from_args(args: argparse.Namespace) -> AgentSettings:
         filter_mode="lenient" if args.lenient else "strict",
         ppo_required=args.ppo_required,
         live_only=args.live,
+        allow_sample_fallback=args.allow_sample_fallback,
+        raw_cache_path=Path("data/internships.json"),
         reports_dir=Path(args.reports_dir),
         limit=args.limit,
         top_k=args.top_k,

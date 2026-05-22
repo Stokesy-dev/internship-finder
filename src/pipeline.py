@@ -53,6 +53,8 @@ class InternshipIntelligenceAgent:
             filter_mode=settings.filter_mode,
             ppo_required=settings.ppo_required,
             live_only=settings.live_only,
+            allow_sample_fallback=settings.allow_sample_fallback,
+            raw_output_path=settings.raw_cache_path,
         )
         self.jd_parser = JDParser(llm=self.llm, use_llm=settings.use_llm)
         self.company_researcher = CompanyResearcher(llm=self.llm, use_llm=settings.use_llm)

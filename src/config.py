@@ -17,6 +17,8 @@ class AgentSettings:
     filter_mode: FilterMode = "strict"
     ppo_required: bool = False
     live_only: bool = False
+    allow_sample_fallback: bool = False
+    raw_cache_path: Path = Path("data/internships.json")
     reports_dir: Path = Path("reports")
     limit: int = 30
     top_k: int = 10

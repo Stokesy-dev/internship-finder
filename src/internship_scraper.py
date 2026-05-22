@@ -26,6 +26,7 @@ class InternshipScraper:
         role_query: str = "",
         ppo_required: bool = False,
         live_only: bool = False,
+        allow_sample_fallback: bool = False,
         filter_mode: FilterMode = "strict",
         raw_output_path: str | Path = "data/internships.json",
         timeout_seconds: int = 15,
@@ -40,6 +41,7 @@ class InternshipScraper:
             ppo_required=ppo_required,
         )
         self.live_only = live_only
+        self.allow_sample_fallback = allow_sample_fallback
         self.raw_output_path = Path(raw_output_path)
         self.http = ScraperHttpClient(
             timeout_seconds=timeout_seconds,
@@ -73,27 +75,45 @@ class InternshipScraper:
         )
 
         raw = self._dedupe(discovered)
-        self._save_raw(raw)
-        filtered = self.filter_internships(raw)
+        if raw:
+            self._save_raw(raw)
+        else:
+            LOGGER.info("Live discovery returned zero raw listings; preserving existing cache")
+
+        filtered = self.filter_internships(raw) if raw else []
         if filtered:
             LOGGER.info("Discovery complete raw=%s filtered=%s", len(raw), len(filtered))
             return filtered[:limit]
 
-        live_requests_succeeded = self.http.successful_requests > successful_requests_before
-        if raw:
-            LOGGER.warning("Live sources returned %s internships but none passed filters. Fallback disabled.", len(raw))
-            return []
         if self.live_only:
-            LOGGER.error("--live enabled and all live sources failed or returned zero internships. No fallback used.")
-            return []
-        if live_requests_succeeded:
-            LOGGER.warning("Live sources responded but returned zero internships. Fallback disabled.")
+            LOGGER.error(
+                "--live enabled: %s raw listings, zero after filter; no cache replay or sample fallback",
+                len(raw),
+            )
             return []
 
-        LOGGER.warning("All live sources failed; using sample fallback data.")
-        fallback = self._sample_internships()
-        self._save_raw(fallback)
-        return self.filter_internships(fallback)[:limit]
+        replayed = self._replay_from_cache(limit)
+        if replayed:
+            return replayed
+
+        live_requests_succeeded = self.http.successful_requests > successful_requests_before
+        if live_requests_succeeded:
+            LOGGER.warning(
+                "Live sources returned %s raw internships but none passed filters; cache replay also empty",
+                len(raw),
+            )
+            return []
+
+        if self.allow_sample_fallback:
+            LOGGER.warning("All live sources failed; using sample fallback (--allow-sample-fallback).")
+            fallback = self._sample_internships()
+            self._save_raw(fallback)
+            return self.filter_internships(fallback)[:limit]
+
+        LOGGER.warning(
+            "All live sources failed and cache replay empty; enable --allow-sample-fallback for dev samples"
+        )
+        return []
 
     def filter_internships(self, internships: Iterable[Internship]) -> list[Internship]:
         filtered: list[Internship] = []
@@ -152,7 +172,42 @@ class InternshipScraper:
         query += f" stipend {policy.min_stipend_inr}"
         return [query, *DEFAULT_SEARCH_QUERIES]
 
+    def _replay_from_cache(self, limit: int) -> list[Internship]:
+        cached = self._load_raw_cache()
+        if not cached:
+            LOGGER.info("No cached raw listings at %s", self.raw_output_path)
+            return []
+        LOGGER.info(
+            "Post-filter live set empty; replaying %s cached listings from %s",
+            len(cached),
+            self.raw_output_path,
+        )
+        filtered = self.filter_internships(cached)
+        if filtered:
+            LOGGER.info("Cache replay filtered=%s", len(filtered))
+            return filtered[:limit]
+        LOGGER.warning("Cache replay produced zero matches with current filter policy")
+        return []
+
+    def _load_raw_cache(self) -> list[Internship]:
+        if not self.raw_output_path.exists():
+            return []
+        try:
+            payload = json.loads(self.raw_output_path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError) as exc:
+            LOGGER.warning("Could not read cache %s: %s", self.raw_output_path, exc)
+            return []
+        if not isinstance(payload, list):
+            return []
+        internships: list[Internship] = []
+        for item in payload:
+            if isinstance(item, dict):
+                internships.append(Internship(**item))
+        return self._dedupe(internships)
+
     def _save_raw(self, internships: list[Internship]) -> None:
+        if not internships:
+            return
         self.raw_output_path.parent.mkdir(parents=True, exist_ok=True)
         data = [asdict(internship) for internship in self._dedupe(internships)]
         self.raw_output_path.write_text(json.dumps(data, indent=2), encoding="utf-8")

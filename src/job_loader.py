@@ -20,6 +20,8 @@ class InternshipRepository:
         filter_mode: FilterMode = "strict",
         ppo_required: bool = False,
         live_only: bool = False,
+        allow_sample_fallback: bool = False,
+        raw_output_path: str | Path = "data/internships.json",
     ) -> None:
         self.scraper = scraper or InternshipScraper(
             min_stipend_inr=min_stipend_inr,
@@ -28,6 +30,8 @@ class InternshipRepository:
             filter_mode=filter_mode,
             ppo_required=ppo_required,
             live_only=live_only,
+            allow_sample_fallback=allow_sample_fallback,
+            raw_output_path=raw_output_path,
         )
 
     def load(

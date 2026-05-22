@@ -15,3 +15,9 @@ Format:
 - Tests: `./venv/bin/python -m pytest tests/ -q` — pass
 - Commit: 28c4e49
 
+## 2026-05-22 — Issue #2 — Hybrid cache replay (no sample fallback by default)
+- Cache replay when live post-filter is empty (`--live` skips replay)
+- Preserve cache when live raw is empty; sample fallback gated behind `--allow-sample-fallback`
+- Tests: `./venv/bin/python -m pytest tests/ -q` — pass
+- Commit: b7163d0
+
