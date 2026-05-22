@@ -10,6 +10,7 @@ from urllib.parse import urlparse
 from .company_careers_scraper import CompanyCareersScraper
 from .filter_policy import FilterMode, FilterPolicy
 from .greenhouse_scraper import GreenhouseScraper
+from .internshala_scraper import InternshalaScraper
 from .lever_scraper import LeverScraper
 from .models import Internship
 from .scraper_http import ScraperHttpClient
@@ -49,6 +50,7 @@ class InternshipScraper:
             retry_backoff_seconds=retry_backoff_seconds,
         )
         self.greenhouse = GreenhouseScraper(self.http)
+        self.internshala = InternshalaScraper(self.http)
         self.lever = LeverScraper(self.http)
         self.wellfound = WellfoundScraper(self.http)
         self.company_careers = CompanyCareersScraper(self.http)
@@ -59,6 +61,9 @@ class InternshipScraper:
         manual = self._discover_manual_urls(manual_urls or [], limit)
         discovered.extend(manual)
         discovered.extend(self._discover_source("greenhouse", lambda: self.greenhouse.discover(limit=limit)))
+        discovered.extend(
+            self._discover_source("internshala", lambda: self.internshala.discover(limit=limit))
+        )
         discovered.extend(self._discover_source("lever", lambda: self.lever.discover(limit=limit)))
         search_queries = self._search_queries()
         discovered.extend(

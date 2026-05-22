@@ -46,3 +46,9 @@ Format:
 - Tests: `./venv/bin/python -m pytest tests/ -q` — pass
 - Commit: e50e554
 
+## 2026-05-22 — Issue #7 — Internshala discovery source
+- Added `InternshalaScraper` with HTML parsing, ~1s polite delay, wired into discovery
+- Fixture tests in `tests/fixtures/internshala_search.html`
+- Tests: `./venv/bin/python -m pytest tests/ -q` — pass
+- Commit: 8d7aa25
+

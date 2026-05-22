@@ -55,6 +55,10 @@ Example: strict exploration with a smaller report set:
 python main.py discover --resume uploads/resume.pdf --no-lenient --top-k 5
 ```
 
+## Scraping etiquette
+
+**Internshala** is queried during live discovery with about **1 second** between search pages, retries via `ScraperHttpClient`, and graceful failure (other sources continue if Internshala is down). Do not lower the delay for bulk crawling.
+
 ## Streamlit viewer
 
 Thin UI to read the five markdown reports and trigger runs (no upload wizard or auth).
